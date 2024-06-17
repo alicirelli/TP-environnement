@@ -1,0 +1,71 @@
+COMMAND TP environnement-developpement
+
+849  mkdir tp-environnement-developpement
+  850  git init
+  851  cd tp-environnement-developpement/
+  852  git init
+  853  touch dockerfile
+  854  code dockerfile 
+  855  touch docker-compose.yml
+  856  code docker-compose.yml 
+  857  touch index.php
+  858  code index.php 
+  859  touch database.sql
+  860  code database.sql 
+  861  git add .
+  862  git commit -m "First commit: ajout fichiers docker et databases.sql"
+  863  git remote add origin git@github.com:alicirelli/TP-environnement.git
+  864  git push -u origin main
+  865  git branch -a
+  866  git branch main
+  867  git push origin main
+  868  git checkout main
+  869  git checkout -b develop
+  870  git checkout -b feature/databasesetup
+  871  code database.sql 
+  872  git add database.sql 
+  873  git commit -m "Ajout des requetes d'insertion employes"
+  874  git checkout develop
+  875  git merge feature/databasesetup 
+  876  git push origin develop
+  877  git checkout feature/databasesetup 
+  878  git push origin feature/databasesetup 
+  879  docker-compose up -build
+  880  docker-compose up --build
+  881  ls
+  882  docker compose build
+  883  code .
+  884  docker compose up
+  885  docker ps
+  886  git checkout develop
+  887  git checkout -b feature/api-endpoint
+  888  touch api-endpoint.php
+  889  git add api-endpoint.php 
+  890  git commit -m "Ajout api-endopoint fichier"
+  891  git checkout develop
+  892  git status
+  893  git checkout feature/databasesetup 
+  894* 
+  895  git checkout feature/databasesetup 
+  896  touch api-endpoint.php
+  897  code api-endpoint.php 
+  898  git add api-endpoint.php 
+  899  git commit -m "Ajout fichier api-endpoint"
+  900  git checkout develop 
+  901  git add api-endpoint.php 
+  902  git commit -m "Ajout conflict api-endpoint"
+  903  git merge feature/api-endpoint 
+  904  git add api-endpoint.php 
+  905  git commit
+  906  du -sh .
+  907  du -s .
+  908  du -sh .
+  909  docker compose restart
+  910  docker compose restart php
+  911  cd ..
+  912  find . -mtime -1
+  913  cd tp-environnement-developpement/
+  914  git checkout main
+  915  touch command.txt
+  916  code command.txt 
+  917  history
